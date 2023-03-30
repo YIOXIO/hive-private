@@ -1,0 +1,160 @@
+/* Общие стили */
+
+@import '../private-office-blocks/root/root.css';
+@import '../private-office-blocks/page/page.css';
+
+
+
+/* Стили для секции Личный кабинет - Главная */
+
+@import '../private-office-blocks/section-title/section-title.css';
+@import '../private-office-blocks/grid/private-office-grid.css';
+@import '../private-office-blocks/card/private-office-card.css';
+@import '../private-office-blocks/card/icon/private-office-card-icon.css';
+@import '../private-office-blocks/wrapper/private-office-wrapper.css';
+@import '../private-office-blocks/title/profile-office-title.css';
+@import '../private-office-blocks/description/profile-office-description.css';
+@import '../private-office-blocks/span-accent/private-office-span-accent.css';
+
+
+
+
+/* Карточка профиль */
+@import '../private-office-blocks/profile/private-office-profile.css';
+@import '../private-office-blocks/profile/grid/private-office-profile-grid.css';
+@import '../private-office-blocks/profile/name/private-office-profile-name.css';
+@import '../private-office-blocks/profile/id/private-office-profile-id.css';
+@import '../private-office-blocks/profile/edit-button/profile-office-profile-edit-button.css';
+
+
+/* Карточка дотсижения */
+@import '../private-office-blocks/achivment/private-office-achivment.css';
+@import '../private-office-blocks/achivment/private-office-achivment-image/private-office-achivment-image.css';
+
+
+
+.elements__card {
+    list-style: none;
+    margin: 0 0 68px;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    column-gap: 68px;
+}
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    max-width: 551px;
+    align-items: flex-start;
+    background: #FFFFFF;
+    box-shadow: 0px 6px 13px rgba(0, 0, 0, 0.12);
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 52px 41px 56px;
+    gap: 30px;
+}
+
+.card__name {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 53px;
+    letter-spacing: 0.07em;
+    color: #001529;
+    margin: 0;
+}
+
+.card__description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #001529;
+    margin: 0;
+
+}
+
+.card__projects-button-edit {
+    padding: 12px;
+    border: 1px;
+    cursor: pointer;
+    background: url('../images/private-office-pencil.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+}
+
+.card__projects-button {
+    background: #7C94FF;
+    border-radius: 5px;
+    margin-right: 48px;
+    padding: 11px 22px 15px;
+    border: none;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.07em;
+    cursor: pointer;
+}
+
+.section-subtitle {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    color: #001529;
+}
+
+/* ФОРМА */
+
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.form-add-project {
+    background: #FFFFFF;
+    box-shadow: 0px 6px 13px rgba(0, 0, 0, 0.12);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 74px 46px;
+
+
+}
+
+.form-add-project-flex {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+input {
+    border: 1px solid #9D9B9B;
+    border-radius: 5px;
+    padding: 14px 0 14px 19px;
+
+    margin-bottom: 2em;
+}
+
+textarea {
+    border: 1px solid #9D9B9B;
+    border-radius: 5px;
+    padding: 14px 0 14px 19px;
+
+    margin-bottom: 2em;
+}
+
+label {
+    margin-bottom: 10px;
+}

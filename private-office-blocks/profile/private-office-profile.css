@@ -1,0 +1,6 @@
+.private-office-profile {
+    grid-area: profile;
+    display: flex;
+    justify-content: space-between;
+
+}
