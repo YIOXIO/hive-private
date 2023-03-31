@@ -158,3 +158,15 @@ textarea {
 label {
     margin-bottom: 10px;
 }
+
+#project-button {
+    background: url('../images/private-office-arrow.svg');
+    padding: 14px;
+    border: none;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+}
