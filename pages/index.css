@@ -35,7 +35,7 @@
 
 .elements__card {
     list-style: none;
-    margin: 0 0 68px;
+    margin: 0 0 48px;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
@@ -104,6 +104,8 @@
 
 .section-subtitle {
     font-weight: 700;
+    padding: 0;
+    margin: 0 0 48px;
     font-size: 25px;
     line-height: 150%;
     letter-spacing: 0.04em;
@@ -126,6 +128,8 @@ ul {
     display: flex;
     flex-direction: column;
     padding: 74px 46px;
+    display: none;
+    margin-bottom: 48px;
 
 
 }
@@ -143,7 +147,11 @@ input {
     border: 1px solid #9D9B9B;
     border-radius: 5px;
     padding: 14px 0 14px 19px;
-
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.04em;
+    color: #7C7A7A;
     margin-bottom: 2em;
 }
 
@@ -151,7 +159,11 @@ textarea {
     border: 1px solid #9D9B9B;
     border-radius: 5px;
     padding: 14px 0 14px 19px;
-
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.04em;
+    color: #7C7A7A;
     margin-bottom: 2em;
 }
 
@@ -169,4 +181,31 @@ label {
     background-size: contain;
     width: 40px;
     height: 40px;
+}
+
+.form-add-project-teamate {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    color: #7C94FF;
+    border: none;
+    background-color: transparent;
+    margin-bottom: 42px;
+}
+
+.project-section-add-button {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    color: #7C94FF;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin-bottom: 48px;
+}
+
+.opened {
+    display: flex;
 }

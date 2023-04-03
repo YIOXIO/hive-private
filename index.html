@@ -10,7 +10,7 @@
 </head>
 
 <body class="root">
-    <main id="app" class="page">
+    <main class="page">
         <section class="private-office">
             <h1 class="section-title">Добро пожаловать в личный кабинет HIVE!</h1>
             <ul class="private-office-grid">
@@ -113,16 +113,16 @@
 
                 </li>
             </ul>
-
         </section>
-        <template id="template" class=" card-temnplate">
+        <section id="project-section" class="private-office-projects">
+        </section>
+        <template id="template">
             <section id="project-section" class="private-office-projects">
                 <h2 class="section-title">Проекты</h2>
                 <p class="section-description">Опишите свои проекты: текущие и те, что в портфолио. Другие
                     участники увидят
                     их и смогут помочь вам. </p>
                 <h2 class="section-subtitle">Личные</h2>
-
                 <div class="elements">
                     <ul class="elements__card">
                         <li class="card">
@@ -150,7 +150,7 @@
                         </li>
                     </ul>
                 </div>
-                <form class="form-add-project" action="">
+                <form id="form" class="form-add-project" action="#">
                     <h2 class="section-title">Редактирование проекта</h2>
                     <h3>Описание проекта</h3>
                     <ul>
@@ -190,14 +190,25 @@
                     <ul>
                         <h3>Добавьте обложку проекта</h3>
                         <li class="form-add-project-flex">
-                            <input type="file"">
-                                </li>
-                            </ul>
-                        </form>
-                    </section>
+                            <input type="file">
+                        </li>
+                    </ul>
+                    <ul>
+                        <h3>Информация о команде</h3>
+                        <button type=" button" class="form-add-project-teamate">+ Добавить участника</button>
+                    </ul>
+                    <ul>
+                        <button type="submit" class="card__projects-button">Сохранить</button>
+                        <button type="button" class="">Отмена</button>
+                    </ul>
+                </form>
+                <button class="project-section-add-button">+ Добавить проект</button>
+                <h2 class="section-subtitle">Командные</h2>
+                <button class="project-section-add-button">+ Добавить проект</button>
+            </section>
         </template>
     </main>
-    <script src=" ./script-hive.js"></script>
+    <script src=" ./index.js"></script>
 </body>
 
 </html>
