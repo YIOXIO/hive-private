@@ -1,11 +1,13 @@
 .private-office-profile-edit-button {
-    padding: 12px;
-    border: 1px;
+    padding: 14px;
+    border: none;
     cursor: pointer;
     background: url('../../../images/private-office-pencil.svg');
+    background-color: transparent;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 24px;
-    height: 24px;
+    width: 25.85px;
+    height: 25.84px;
+
 }

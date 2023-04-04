@@ -32,6 +32,8 @@
 @import '../private-office-blocks/achivment/private-office-achivment-image/private-office-achivment-image.css';
 
 
+/* Карточки проектов в секции Мои проекты */
+
 
 .elements__card {
     list-style: none;
@@ -121,7 +123,7 @@ ul {
     list-style: none;
 }
 
-.form-add-project {
+.private-office-form {
     background: #FFFFFF;
     box-shadow: 0px 6px 13px rgba(0, 0, 0, 0.12);
     border-radius: 5px;
@@ -146,7 +148,7 @@ ul {
 input {
     border: 1px solid #9D9B9B;
     border-radius: 5px;
-    padding: 14px 0 14px 19px;
+    padding: 14px 14px 14px 19px;
     font-weight: 400;
     font-size: 16px;
     line-height: 28px;
@@ -207,5 +209,87 @@ label {
 }
 
 .opened {
+    display: block;
+}
+
+
+.profile-avatar-button-edit {
+    background-image: url('../images/avatar-profile-edit-button.svg');
+    padding: 14px;
+    border: none;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 7px;
+    left: 86px;
+}
+
+.profile-avatar-wrapper {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.profile-avatar-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.profile-avatar-list_flex {
     display: flex;
+    flex-direction: column;
+}
+
+.profile-avatar-list li {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.profile-avatar-list label::after {
+    content: '*';
+    color: #D12C53;
+    margin-left: 5px;
+}
+
+.form-select {
+    border-color: #202020;
+    width: 100%;
+    font-size: 16px;
+    padding: 14px 20px;
+    background: #fff0;
+    color: #001529b3;
+    appearance: none;
+    border: 1px solid #9D9B9B;
+    border-radius: 5px;
+    padding: 14px 0 14px 19px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.04em;
+    color: #7C7A7A;
+    margin-bottom: 2em;
+}
+
+.profile-avatar-list_grid {
+    grid-template-columns: 32.3% auto;
+}
+
+.profile-avatar-submit {
+    font-weight: 700;
+    padding: 11px 47px 13px;
+    font-size: 25px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    background-color: #7C94FF;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin: 23px 0 48px;
 }

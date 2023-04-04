@@ -18,14 +18,15 @@
                     <div class="private-office-wrapper">
                         <div class="private-office-profile">
                             <h2 class="private-office-title">Профиль</h2>
-                            <button class="private-office-profile-edit-button" aria-label="Редактировать"
-                                type="button"></button>
+                            <button id="profile-edit-button" class="private-office-profile-edit-button"
+                                aria-label="Редактировать" type="button"></button>
                         </div>
                         <div class="private-office-profile-grid">
-                            <img src="./images/private-office-avatar.png" alt="Изображение профиля"
+                            <img src="./images/private-office-avatar.png" id="profile-avatar" alt="Изображение профиля"
                                 class="private-office-profile-avatar">
                             <div>
-                                <h3 class="private-office-profile-name">Катаребрикас Василиса Сергеевна</h3>
+                                <h3 class="private-office-profile-name" id="profile-name">Катаребрикас Василиса
+                                    Сергеевна</h3>
                                 <p class="private-office-profile-id">id 3280822</p>
                             </div>
 
@@ -116,99 +117,175 @@
         </section>
         <section id="project-section" class="private-office-projects">
         </section>
+        <form class="profile-form " action="">
+        </form>
         <template id="template">
-            <section id="project-section" class="private-office-projects">
-                <h2 class="section-title">Проекты</h2>
-                <p class="section-description">Опишите свои проекты: текущие и те, что в портфолио. Другие
-                    участники увидят
-                    их и смогут помочь вам. </p>
-                <h2 class="section-subtitle">Личные</h2>
-                <div class="elements">
-                    <ul class="elements__card">
-                        <li class="card">
-                            <img src="./images/Klaster-project-card-image.png" alt="">
-                            <h3 class="card__name">Klaster</h3>
-                            <p class="card__description">Разработка концепции системы мотивации граждан по
-                                освоению
-                                необходимых компетенций в развитии
-                                цифровой экономики России и получению цифровых сертификатов.</p>
-                            <div class="card__projects-wrapper">
-                                <button type="button" class="card__projects-button">Посмотреть проект</button>
-                                <button class="card__projects-button-edit"></button>
-                            </div>
-                        </li>
-                        <li id="ls" class="card">
-                            <img src="./images/Flower-project-card-image.png" alt="">
-                            <h3 class="card__name">HACKMANAGE</h3>
-                            <p class="card__description">Разработка портального решения для органов управления
-                                административным округом и администрацией города в рамках концепции «Умного
-                                города»</p>
-                            <div class="card__projects-wrapper">
-                                <button type="button" class="card__projects-button">Посмотреть проект</button>
-                                <button id="edit-card" class="card__projects-button-edit"></button>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <form id="form" class="form-add-project" action="#">
-                    <h2 class="section-title">Редактирование проекта</h2>
-                    <h3>Описание проекта</h3>
-                    <ul>
-                        <li class="form-add-project-flex">
-                            <label for="name">Название проекта</label>
-                            <input type="text" id="name" placeholder="Назавание проекта" name="project_name" />
-                        </li>
-                        <li class="form-add-project-flex">
-                            <label for="describe">Краткое описание проекта</label>
-                            <textarea name="project_describe" id="describe"
-                                placeholder="Описание проекта, какую проблему решает" cols="30" rows="10"></textarea>
-                        </li>
-                    </ul>
-                    <ul>
-                        <h3>Стадия реализация проекта</h3>
-                        <li class="form-add-project-flex">
-                            <label for="idea">Идея</label>
-                            <input type="text" id="idea" name="project_idea" placeholder="Идея">
-                        </li>
-                        <li class="form-add-project-flex">
-                            <label for="required_invest">Требуемые инвестиции</label>
-                            <input type="number" id="required_invest" name="project_required_invest"
-                                placeholder="Требуемые инвестиции (руб.)">
-                        </li>
-                        <li class="form-add-project-flex">
-                            <label for="invole_invest">Привлеченные инвестиции</label>
-                            <input type="number" id="invole_invest" name="project_invole_invest"
-                                placeholder="Привлеченные инвестиции (руб.)">
-                        </li>
-                    </ul>
-                    <ul>
-                        <h3>Добавьте презентацию</h3>
-                        <li class="form-add-project-flex">
-                            <input type="file" accept="">
-                        </li>
-                    </ul>
-                    <ul>
-                        <h3>Добавьте обложку проекта</h3>
-                        <li class="form-add-project-flex">
-                            <input type="file">
-                        </li>
-                    </ul>
-                    <ul>
-                        <h3>Информация о команде</h3>
-                        <button type=" button" class="form-add-project-teamate">+ Добавить участника</button>
-                    </ul>
-                    <ul>
-                        <button type="submit" class="card__projects-button">Сохранить</button>
-                        <button type="button" class="">Отмена</button>
-                    </ul>
-                </form>
-                <button class="project-section-add-button">+ Добавить проект</button>
-                <h2 class="section-subtitle">Командные</h2>
-                <button class="project-section-add-button">+ Добавить проект</button>
-            </section>
+            <h2 class="section-title">Проекты</h2>
+            <p class="section-description">Опишите свои проекты: текущие и те, что в портфолио. Другие
+                участники увидят
+                их и смогут помочь вам. </p>
+            <h2 class="section-subtitle">Личные</h2>
+            <div class="elements">
+                <ul class="elements__card">
+                    <li class="card">
+                        <img src="./images/Klaster-project-card-image.png" alt="">
+                        <h3 class="card__name">Klaster</h3>
+                        <p class="card__description">Разработка концепции системы мотивации граждан по
+                            освоению
+                            необходимых компетенций в развитии
+                            цифровой экономики России и получению цифровых сертификатов.</p>
+                        <div class="card__projects-wrapper">
+                            <button type="button" class="card__projects-button">Посмотреть проект</button>
+                            <button class="card__projects-button-edit"></button>
+                        </div>
+                    </li>
+                    <li id="ls" class="card">
+                        <img src="./images/Flower-project-card-image.png" alt="">
+                        <h3 class="card__name">HACKMANAGE</h3>
+                        <p class="card__description">Разработка портального решения для органов управления
+                            административным округом и администрацией города в рамках концепции «Умного
+                            города»</p>
+                        <div class="card__projects-wrapper">
+                            <button type="button" class="card__projects-button">Посмотреть проект</button>
+                            <button id="edit-card" class="card__projects-button-edit"></button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <form id="form" class="private-office-form" action="#">
+                <h2 class="section-title">Редактирование проекта</h2>
+                <h3>Описание проекта</h3>
+                <ul>
+                    <li class="form-add-project-flex">
+                        <label for="name">Название проекта</label>
+                        <input type="text" id="name" placeholder="Назавание проекта" name="project_name" />
+                    </li>
+                    <li class="form-add-project-flex">
+                        <label for="describe">Краткое описание проекта</label>
+                        <textarea name="project_describe" id="describe"
+                            placeholder="Описание проекта, какую проблему решает" cols="30" rows="10"></textarea>
+                    </li>
+                </ul>
+                <ul>
+                    <h3>Стадия реализация проекта</h3>
+                    <li class="form-add-project-flex">
+                        <label for="idea">Идея</label>
+                        <input type="text" id="idea" name="project_idea" placeholder="Идея">
+                    </li>
+                    <li class="form-add-project-flex">
+                        <label for="required_invest">Требуемые инвестиции</label>
+                        <input type="number" id="required_invest" name="project_required_invest"
+                            placeholder="Требуемые инвестиции (руб.)">
+                    </li>
+                    <li class="form-add-project-flex">
+                        <label for="invole_invest">Привлеченные инвестиции</label>
+                        <input type="number" id="invole_invest" name="project_invole_invest"
+                            placeholder="Привлеченные инвестиции (руб.)">
+                    </li>
+                </ul>
+                <ul>
+                    <h3>Добавьте презентацию</h3>
+                    <li class="form-add-project-flex">
+                        <input type="file" accept="">
+                    </li>
+                </ul>
+                <ul>
+                    <h3>Добавьте обложку проекта</h3>
+                    <li class="form-add-project-flex">
+                        <input type="file">
+                    </li>
+                </ul>
+                <ul>
+                    <h3>Информация о команде</h3>
+                    <button type=" button" class="form-add-project-teamate">+ Добавить участника</button>
+                </ul>
+                <ul>
+                    <button type="submit" class="card__projects-button">Сохранить</button>
+                    <button type="button" class="">Отмена</button>
+                </ul>
+            </form>
+            <button class="project-section-add-button">+ Добавить проект</button>
+            <h2 class="section-subtitle">Командные</h2>
+            <button class="project-section-add-button">+ Добавить проект</button>
+        </template>
+        <template id="profile-form-tmpl">
+            <h2 class="section-title">Контактные данные</h2>
+            <div class="profile-avatar-wrapper">
+                <img src="./images/avatar-profile.png" alt="">
+                <button class="profile-avatar-button-edit"></button>
+            </div>
+            <ul class="profile-avatar-list">
+                <li>
+                    <label for="profile-name">Имя</label>
+                    <input id="profile-name" name="profile-name" placeholder="Имя" value="" aria-required="true"
+                        type="text">
+                </li>
+                <li>
+                    <label for="profile-middle_name">Фамилия</label>
+                    <input id="profile-middle_name" name="profile-middle_name" placeholder="Фамилия" value=""
+                        aria-required="true" type="text">
+                </li>
+                <li>
+                    <label for="profile-last_name">Отчество</label>
+                    <input id="profile-last_name" name="profile-last_name" placeholder="Отчество" value=""
+                        aria-required="true" type="text">
+                </li>
+            </ul>
+            <ul class="profile-avatar-list">
+                <li>
+                    <label for="profile-date">Дата рождения</label>
+                    <input id="profile-date" name="profile-date" placeholder="дд.мм.гггг" value="" aria-required="true"
+                        type="date">
+                </li>
+                <li>
+                    <label for="profile-city">Город</label>
+                    <input id="profile-city" name="profile-city" placeholder="Город" value="" aria-required="true"
+                        type="text">
+                </li>
+                <li>
+                    <label for="profile-status">Студент /школьник</label>
+                    <select class="form-select" name="profile-status" id="profile-status">
+                        <option value="">Студент</option>
+                        <option value="">Школьник</option>
+                    </select>
+                </li>
+            </ul>
+            <ul class="profile-avatar-list profile-avatar-list_flex">
+                <li>
+                    <label for="profile-school">Название ВУЗа / школы</label>
+                    <input id="profile-school" name="profile-school" placeholder="Название ВУЗа / школы" value=""
+                        aria-required="true" type="text">
+                </li>
+            </ul>
+            <ul class="profile-avatar-list profile-avatar-list_grid">
+                <li>
+                    <label for="proifle-course">Курс / класс</label>
+                    <input id="proifle-course" name="proifle-course" placeholder="Курс / класс" value=""
+                        aria-required="true" type="text">
+                </li>
+                <li>
+                    <label for="profile-direction">Направление подготовки</label>
+                    <input id="profile-direction" name="profile-direction" placeholder="Направление подготовки" value=""
+                        aria-required="true" type="text">
+                </li>
+            </ul>
+            <ul class="profile-avatar-list">
+                <li>
+                    <label for="profile-tel">Контактный телефон</label>
+                    <input id="profile-tel" name="profile-tel" value="" placeholder="Контактный телефон"
+                        aria-required="true" type="number">
+                </li>
+                <li>
+                    <label for="profile-email">Контактный e-mail</label>
+                    <input id="profile-email" name="profile-email" value="" placeholder="E-mail" aria-required="true"
+                        type="text">
+                </li>
+            </ul>
+
+            <button type="submit" class="profile-avatar-submit">Сохранить изменения</button>
         </template>
     </main>
-    <script src=" ./index.js"></script>
+    <script src="./index.js"></script>
 </body>
 
 </html>
